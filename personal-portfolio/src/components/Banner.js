@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Anthony Te Saluda" ];
+  const toRotate = [ "Nayeli MTC Te Saluda" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bienvenido a mi Portafolio</span>
-                <h1>{`Hola!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Anthony te saluda" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hola mi nombre es Anthony Quishpe, actualmente me encuentro estudiando la ingenieria en Tecnolgias de la Informacion en la Universidad de las Fuerzas Armadas ESPE, me encuentro cursando el 6to y 7mo semestre. Soy una persona alegre, motivadora. Me gusta aprender cosas nuevas para asi de esta manera tener un mayor desempeño en las actividades y ofreceer productos de buena calidad.</p>
+                <h1>{`Hola!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Nayeli te saluda" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Bienvenido mi nombre es Nayeli Michelle Tipantiza Cumbal, estudio la carrera de Tecnolgias de la Informacion en la Universidad de las Fuerzas Armadas ESPE. Me gusta mucho leer, escuchat música y pasar tiempo con mi familia, me gustan mucho los animalitos. Me encanta conocer nuevos lugares y aprender muchas cosas.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
